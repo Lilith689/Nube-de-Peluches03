@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*:root {
+	--primary-color: #fb98bc;
+	--background-color: #ffffff;
+	--dark-color:  #444444;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    list-style: none;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.heading-1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+/*MENÚ*/
+
+.menu.container {
+	position: relative;
+	z-index: 1000;
+
+}
+.content {
+    min-height: 80px;
+   background-color: #fb98bc;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/*TERMINOS Y CONDICIONES*/
+.contrai {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.containe {
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.register-btn {
+    padding: 15px 200px;
+    font-size: 20px;
+    background-color:  #fb98bc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color:  #fb98bc;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*CONTENIDO*/
+.form-register {
+    width: 1000px;
+    background: #6b6767;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 0px 13px 37px #2e2b2b;
+}
+
+.form-register h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #fffeff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #a1939d;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #ef7f94;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 468px) {
+    .contrai, .containe {
+        max-width: 90%; 
+    }
+
+    .register-btn {
+        padding: 10px 50px;
+        font-size: 18px;
+    }
+
+    .form-register {
+        width: 100%; 
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .controls {
+        font-size: 16px; 
+    }
+
+    .form-register h1 {
+        font-size: 20px; 
+    }
+
+    .form-register .botons {
+        padding: 10px; 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contrai, .containe {
+        max-width: 95%; 
+        padding: 20px;
+    }
+
+    .register-btn {
+        padding: 12px 100px; 
+        font-size: 18px;
+    }
+
+    .form-register {
+        width: 90%; 
+        padding: 25px;
+        margin-top: 15px;
+    }
+
+    .controls {
+        font-size: 17px; 
+    }
+
+    .form-register h1 {
+        font-size: 21px; 
+    }
+
+    .form-register .botons {
+        padding: 12px; 
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contrai, .containe {
+        max-width: 95%; 
+        padding: 20px;
+    }
+
+    .register-btn {
+        padding: 12px 100px;
+        font-size: 18px;
+    }
+
+    .form-register {
+        width: 90%; 
+        padding: 25px;
+        margin-top: 15px;
+    }
+
+    .controls {
+        font-size: 17px;
+    }
+
+    .form-register h1 {
+        font-size: 21px;
+    }
+
+    .form-register .botons {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff; /*SUB-FOOTER*/
+    padding: 3rem;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+    justify-items: center;
+    text-align: center;
+}
+
+.title-footer {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+    list-style: none;
+    color: #fff; /*LETRAS DE INFO-CONTACTO*/
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+    text-decoration: none;
+    color: #fff;  /*LETRAS FOOTER*/
+    font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+    color: var(--dark-color);
+}
+
+.social-icons span {
+    margin: 0 1rem;
+}
+
+.social-icons span img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons span img:hover {
+    transform: scale(1.1);
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .menu-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-footer > * {
+        margin-bottom: 2rem;
+    }
+
+    .menu-footer .social-icons {
+        justify-content: center;
+    }
+
+    .menu-footer .newsletter .content {
+        flex-direction: column;
+    }
+
+    .menu-footer .newsletter input {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu-footer .newsletter button {
+        margin-top: 2rem;
+    }
+
+    .container-blogs {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		padding: 0 15px;
+	}
+}
+
+.content p {
+    font-size: 1.4rem;
+    color: #fff; /*LETRAS DE SUSCRIPCIÓN*/
+    font-weight: 300;
+}
+
+.content input {
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ede0d3; /*1ER BARRA*/
+    cursor: pointer;
+    padding: 0.5rem 0 1.2rem;
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+    color: #eee;
+}
+
+.content button {
+    border: none;
+    background-color: #07ffbd;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.content button:hover {
+    background-color: #171615;
+    color: var(--primary-color);
+}
+
+/* Estilos del copyright */
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid #ffffff;
+}
+
+.copyright p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+/*tableta*/
+@media(max-width:768px) {
+
+    .menu {
+        padding: 30px;
+    }
+    
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fb98bc;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .heading-1 {
+		font-size: 2.8rem;
+	}
+
+}
+
+@media (max-width: 468px) {
+	html {
+		font-size: 42.5%;
+	}
+
+	
+	.menu{
+		display: flex;
+		gap: 3rem;
+	}
+    
+	.menu{
+		display: flex;
+		gap: 3rem;
+	}
+}
